@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include <math.h>
 #include <string.h>
-#define LEN_NAME 100
+#define LEN_TEXT 100
 /**
 ** Thiago André Cardoso Silva
 ** Aulas particulares de programação (para iniciantes)
@@ -25,10 +25,10 @@ int main(int argc, char const *argv[]) {
 
 int lerTexto(){
   char *texto;
-  texto = (char*) malloc(sizeof(char*) * LEN_NAME);
+  texto = (char*) malloc(sizeof(char*) * LEN_TEXT);
   if(!texto) return 0;
   printf("Digite o texto: ");
-  fgets(texto, LEN_NAME, stdin);
+  fgets(texto, LEN_TEXT, stdin);
   int ok = converteArrayCharParaArrayIntASCII_writeInFile(texto);
   printf("OK %d", ok);
   return 0;
