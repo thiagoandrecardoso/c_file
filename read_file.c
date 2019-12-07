@@ -34,12 +34,13 @@ int main(int argc, char const *argv[]) {
 	char ch;
 	do {
 		ch = getc(fp); // pega 1 caractere por vez
-		printf("%c",ch);
-		printf("-");
+		printf("%c", ch);
+		// printf("-");
 	} while (ch != EOF);
 
 	printf("\n");
-	fclose(fp);
 
+	// fecha o arquivo.
+	fclose(fp);
 	return 0;
 }
