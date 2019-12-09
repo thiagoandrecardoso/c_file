@@ -40,6 +40,9 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
+/**
+* Implementação das funções
+*/
 void abrir_arquivp(){
   file = fopen(path, read_type);
   if(file == NULL) {
