@@ -54,11 +54,11 @@ void abrir_arquivp(){
 void inserir_dados_no_arquivo(){
   Aluno aluno;
   printf("Digite o nome: ");
-  fgets(aluno.nome, 20, stdin);
+  fgets(aluno.nome, sizeof(aluno.nome), stdin);
   printf("Digite o endereço: ");
-  fgets(aluno.endereco, 30, stdin);
+  fgets(aluno.endereco, sizeof(aluno.endereco), stdin);
   printf("Digite o CPF: ");
-  fgets(aluno.cpf, 13, stdin);
+  fgets(aluno.cpf, sizeof(aluno.cpf), stdin);
   printf("Digite a idade: ");
   scanf("%d", &aluno.idade);
   printf("Digite o telefone: ");
